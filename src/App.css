@@ -1,0 +1,21 @@
+.itemtiles-section {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.trendingitems-header {
+  text-align: center;
+  font-size: 25px;
+}
+
+.itemtile-image {
+  width: 140px;
+  height: 140px;
+}
+
+.itemtile-name {
+  font-size: 13px;
+}

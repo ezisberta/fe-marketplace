@@ -1,6 +1,5 @@
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import "./App.css";
 import AllItems from "./Routed/AllItems";
 import BasketPage from "./Routed/BasketPage";
 import CreateUser from "./Routed/CreateUser";
@@ -10,15 +9,14 @@ import SellPage from "./Routed/SellPage";
 import SellerProfile from "./Routed/SellerProfile";
 import UserListings from "./Routed/UserListings";
 import UserProfile from "./Routed/UserProfile";
+import Home from "./Routed/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <h1 className="tittle">Our Marketplace</h1>
-        </header>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/AllItems" element={<AllItems />} />
           <Route path="/BasketPage" element={<BasketPage />} />
           <Route path="/CreateUser" element={<CreateUser />} />
