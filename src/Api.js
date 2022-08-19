@@ -6,15 +6,28 @@ export function GetTrendingItems() {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log(data.items);
       return data.items;
     });
 }
 
 export function GetAllItems() {
-  return fetch("https://nc-marketplace-1.herokuapp.com/api/items/")
+  return fetch(`https://nc-marketplace-1.herokuapp.com/api/items`)
     .then((res) => res.json())
     .then((data) => {
+      console.log(data.items);
+      return data.items;
+    });
+}
+
+export function GetItemsByCategory(category) {
+  category = "Electronics";
+
+  return fetch(
+    `https://nc-marketplace-1.herokuapp.com/api/items?category_name=${category}`
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.items);
       return data.items;
     });
 }

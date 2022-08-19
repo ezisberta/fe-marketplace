@@ -19,3 +19,17 @@
 .itemtile-name {
   font-size: 13px;
 }
+
+.itemList-section {
+}
+
+.itemList-item {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin: 20px;
+}
+
+.itemListimage {
+  width: 140px;
+  height: 140px;
+}
