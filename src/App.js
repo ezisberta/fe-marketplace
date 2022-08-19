@@ -20,8 +20,11 @@ function App() {
           <Route path="/AllItems" element={<AllItems />} />
           <Route path="/BasketPage" element={<BasketPage />} />
           <Route path="/CreateUser" element={<CreateUser />} />
-          <Route path="/ItemPage" element={<ItemPage />} />
-          <Route path="/ItemCategories" element={<ItemCategories />} />
+          <Route
+            path="/ItemCategories/:category"
+            element={<ItemCategories />}
+          />
+          <Route path="/AllItems/:id" element={<ItemPage />} />
           <Route path="/SellPage" element={<SellPage />} />
           <Route path="/SellerProfile" element={<SellerProfile />} />
           <Route path="/UserListings" element={<UserListings />} />

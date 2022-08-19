@@ -15,19 +15,11 @@ export function GetAllItems() {
     .then((res) => res.json())
     .then((data) => {
       console.log(data.items);
-      return data.items;
-    });
-}
-
-export function GetItemsByCategory(category) {
-  category = "Electronics";
-
-  return fetch(
-    `https://nc-marketplace-1.herokuapp.com/api/items?category_name=${category}`
-  )
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data.items);
+      // console.log(
+      //   data.items.map((item) => {
+      //     return item.category_name;
+      //   })
+      // );
       return data.items;
     });
 }
